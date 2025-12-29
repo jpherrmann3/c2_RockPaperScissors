@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 #include "rps/rps.h"
 #include "user/user.h"
@@ -16,7 +17,7 @@ void read_string(char *buffer, size_t size) {
 
 void print_users(const User *users, size_t count) {
     for (size_t i = 0; i < count; i++) {
-        print("%zu) %s (W:%d L:%d D:%d)\n",
+        printf("%zu) %s (W:%d L:%d D:%d)\n",
         i +1,
         users[i].name,
         users[i].wins,

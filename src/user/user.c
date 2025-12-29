@@ -34,7 +34,7 @@ size_t load_users(const char *filename, User *users, size_t max_users){
 }
 
 void save_users(const char *filename, const User *users, size_t count){
-    FILE *fp = fopen(filename, "W");
+    FILE *fp = fopen(filename, "w");
     if (!fp){
         return;
     }

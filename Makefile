@@ -5,8 +5,8 @@ BUILD = build
 APP = rock_paper_scissors
 TEST = test_rock_paper_scissors
 
-APP_SRCS = src/main.c src/rps/rps.c
-TEST_SRCS = tests/test_rps.c src/rps/rps.c
+APP_SRCS = src/main.c src/rps/rps.c src/user/user.c
+TEST_SRCS = tests/test_rps.c src/rps/rps.c src/user/user.c
 
 all: $(APP)
 
