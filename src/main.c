@@ -3,6 +3,7 @@
 #include <time.h>
 
 #include "rps/rps.h"
+#include "user/user.h"
 
 int main(void){
 
